@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { storage } from '../../constants/firebase'
-
+import { Grid, Card, CardContent, CardActionArea, CardMedia } from '@material-ui/core'
+import './menu.scss'
 
 function MenuItem(props) {
-  const [imageUrl, setImageUrl] = useState('')
+  const [imageUrl, setImageUrl] = useState('https://image.shutterstock.com/image-vector/burger-hamburger-logo-icon-design-260nw-1445463893.jpg')
 
   useEffect(
     () => {
@@ -16,11 +17,20 @@ function MenuItem(props) {
   )
 
   return (
-  <div>
-    <h1>{props.item.name}</h1>
-    <p>{props.item.description}</p>
-    <img src={imageUrl}></img>
-  </div>
+  <Grid item>
+    <Card>
+      <CardActionArea>
+        <CardMedia
+          className="menu_item"
+          image={imageUrl}
+        />
+        <CardContent>
+          <h1>{props.item.name}</h1>
+          <p>{props.item.description}</p>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  </Grid>
   )
 }
 
