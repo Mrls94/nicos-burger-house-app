@@ -18,10 +18,10 @@ function MenuItem(props) {
 
   return (
   <Grid item>
-    <Card>
+    <Card className="card_menu_item">
       <CardActionArea>
         <CardMedia
-          className="menu_item"
+          className="media_menu_item"
           image={imageUrl}
         />
         <CardContent>

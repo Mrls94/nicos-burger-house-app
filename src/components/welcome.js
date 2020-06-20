@@ -10,7 +10,7 @@ function Welcome(props) {
          container
          direction="column"
          justify="center"
-         alignItems="stretch"
+         alignItems="center"
          spacing={3}
        >
         <Grid item>
