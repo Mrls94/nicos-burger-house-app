@@ -11,10 +11,10 @@ function Welcome(props) {
          direction="column"
          justify="center"
          alignItems="center"
-         spacing={3}
+         spacing={6}
        >
         <Grid item>
-          <h1>Hello, {props.name}</h1>
+          <h1>Nuestro Menu!</h1>
         </Grid>
         { menu.map( item => (<MenuItem key={item.name} item={item}></MenuItem>) )}
       </Grid>
