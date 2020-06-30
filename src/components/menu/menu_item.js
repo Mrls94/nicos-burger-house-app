@@ -27,8 +27,8 @@ function MenuItem(props) {
   }, []);
 
   return (
-    <Grid item>
-      <Card className="card_menu_item">
+    <Grid item className="card_menu_item">
+      <Card>
         <CardActionArea>
           <CardMedia className="media_menu_item" image={imageUrl} />
           <CardContent>
